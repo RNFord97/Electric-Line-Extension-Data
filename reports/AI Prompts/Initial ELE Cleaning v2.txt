@@ -1,0 +1,33 @@
+I have some data I want to clean up in excel. I essentially need to standardize the naming of all similar fields across several sheets of data. Most of this is formatting work. Here's the fields in the newest document:
+Year	IOU	New Construction / Upgrade	Mixed Fuel / All Electric	Month	Customer Class	Baseline / Climate Zone	Multi Dwelling	 Total Discounts (Non-Exempted Projects) 	Total Number of Discounts (Non-Exempted Projects)	 Total Allowances (Non-Exempted Projects) 	Total Number of Allowances (Non-Exempted Projects)	 Total Refund Payments Provided to Builders (Non-Exempted Projects) 	Total Number of Refund Payments Provided to Builders (Non-Exempted Projects)	 Total Discounts (Exempted projects) 	Total Number of Discounts (Exempted Projects)	 Total Allowances (Exempted projects) 	Total Number of Allowances (Exempted Projects)	 Total Refund Payments Provided to Builders (Exempted projects) 	Total Number of Refund Payments Provided to Builders (Exempted Projects)	 Total Estimated Non-Refundable 	 Total Estimated Refundable 	Average of # of Days Between Full Payment and Project Energization	Total Electric Line or Service Extensions Energized	Total Electric Line or Service Extension Applications (IOU Installed)	Total Electric Line or Service Extension Applications (Applicant Installed)	Total Number of Estimated Non-Refundable	Total Number of Estimated Refundable
+
+I did some work on this and transformed the data into these fields:
+Month	Customer Class	Type	Count	Fuel_Structure_Type	IoU
+
+All of the additional columns were melted into the "Type" column. And the "Mixed Fuel / All Electric" column became "Fuel_Structure_Type".
+
+The data fields I care about in particular are these two
+Total Electric Line or Service Extension Applications (IOU Installed
+Total Electric Line or Service Extension Applications (Applicant Installed)
+
+In the old data they are called:
+Total Electric Line Extension Requests Received (Applications)
+Total Electric Line Extension Applications for Applicant Install
+or
+Total Electric Line Extension Requests received (applications)
+Total Electric Line Extension Applications for applicant install
+
+
+I basically need to change these names in the old excel file for all rows and for all forumlas and make them match the new updated names above. I tried using excel's built in features but it is a lot of manual work and not all the cells match when using find/replace.
+
+I want you to write a script that standardizes these, gets rid of white space, and capitalizes where need be etc. I will know this works when I have numbers that match my current findings.
+
+The document name is "2023&2024_Composite.4.22.xlsx"
+The formulas that need updating are in the "QC Check" Sheet.
+The sheet names are:
+PG&E_2024
+SCE_2024
+PG&E_2023
+SDGE_2024
+SCE_2023
+SDGE_2023

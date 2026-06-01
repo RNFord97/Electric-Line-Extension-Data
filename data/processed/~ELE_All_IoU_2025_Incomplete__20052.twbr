@@ -3786,7 +3786,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7973' id='20' mode='checkdropdown' name='CA Map' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Calculation_2391974352988409858:nk]' type-v2='filter' values='all' w='12720' x='86839' y='27316'>
+                <zone h='8102' id='20' mode='checkdropdown' name='CA Map' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Calculation_2391974352988409858:nk]' type-v2='filter' values='all' w='12720' x='86839' y='27316'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3794,7 +3794,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7973' id='9' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Customer Class:nk]' type-v2='filter' w='12720' x='86839' y='35289'>
+                <zone h='8102' id='9' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Customer Class:nk]' type-v2='filter' w='12720' x='86839' y='35418'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3802,7 +3802,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7973' id='10' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Calculation_2228437453904437248:nk]' type-v2='filter' values='relevant' w='12720' x='86839' y='43262'>
+                <zone h='8102' id='10' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Calculation_2228437453904437248:nk]' type-v2='filter' values='relevant' w='12720' x='86839' y='43520'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3810,7 +3810,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7973' id='12' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Multi Dwelling:nk]' type-v2='filter' values='relevant' w='12720' x='86839' y='51235'>
+                <zone h='8102' id='12' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Multi Dwelling:nk]' type-v2='filter' values='relevant' w='12720' x='86839' y='51622'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3818,7 +3818,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7973' id='13' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Climate Zone:ok]' type-v2='filter' values='relevant' w='12720' x='86839' y='59208'>
+                <zone h='8102' id='13' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Climate Zone:ok]' type-v2='filter' values='relevant' w='12720' x='86839' y='59724'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3826,7 +3826,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7973' id='14' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:IoU:nk]' type-v2='filter' w='12720' x='86839' y='67181'>
+                <zone h='8102' id='14' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:IoU:nk]' type-v2='filter' w='12720' x='86839' y='67826'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3834,7 +3834,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7973' id='15' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Calculation_2228437453907271682:nk]' type-v2='filter' w='12720' x='86839' y='75154'>
+                <zone h='8102' id='15' mode='checkdropdown' name='Line Graph: Applications' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:Calculation_2228437453907271682:nk]' type-v2='filter' w='12720' x='86839' y='75928'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3842,7 +3842,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7973' id='16' name='Line Graph: Applications' pane-specification-id='7' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:IoU:nk]' type-v2='color' w='12720' x='86839' y='83127'>
+                <zone h='3125' id='16' name='Line Graph: Applications' pane-specification-id='7' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[none:IoU:nk]' type-v2='color' w='12720' x='86839' y='84030'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3850,7 +3850,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7974' id='36' name='CA Map' pane-specification-id='0' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[usr:Percent All Electric (copy)_2391974352985391105:qk]' type-v2='color' w='12720' x='86839' y='91100'>
+                <zone h='3125' id='36' name='CA Map' pane-specification-id='0' param='[federated.0drjc4v18r77ce0zve4l3116p43z].[usr:Percent All Electric (copy)_2391974352985391105:qk]' type-v2='color' w='12720' x='86839' y='87155'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -4038,7 +4038,7 @@
       <simple-id uuid='{D9F2F9CF-87B6-4F83-9CED-E985A55C243F}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows source-height='44'>
     <window class='worksheet' name='ELE Overall Summary'>
       <cards>
         <edge name='left'>
@@ -4440,7 +4440,7 @@
       </cards>
       <simple-id uuid='{D1B11781-6074-46D9-9845-1EE9733D1D49}' />
     </window>
-    <window class='dashboard' name='First Page-Dashboard'>
+    <window class='dashboard' maximized='true' name='First Page-Dashboard'>
       <viewpoints>
         <viewpoint name='CA Map'>
           <zoom type='entire-view' />
@@ -4461,7 +4461,7 @@
       <active id='-1' />
       <simple-id uuid='{87EDD636-66D4-4594-8A95-6DF885E9A24E}' />
     </window>
-    <window class='dashboard' maximized='true' name='Count-Dashboard'>
+    <window class='dashboard' name='Count-Dashboard'>
       <viewpoints>
         <viewpoint name='Count Based' />
       </viewpoints>

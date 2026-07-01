@@ -1,0 +1,1242 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.24.0425.1414                               -->
+<workbook original-version='18.1' source-build='2023.3.5 (20233.24.0425.1414)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='PG&amp;E_2023+ (2023&amp;2024_Composite)' inline='true' name='federated.0da79ua18pd6p913n58zr119dije' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2023&amp;2024_Composite' name='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Rford/OneDrive - California Energy Commission/Documents/Analysis - Scripts and Code/Electric-Line-Extension-Data/data/processed/2023&amp;2024_Composite.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='PG&amp;E_2023+' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='Month' />
+            <column datatype='string' name='Customer Class' />
+            <column datatype='string' name='Type' />
+            <column datatype='real' name='Count' />
+            <column datatype='string' name='Fuel_Structure_Type' />
+            <column datatype='string' name='IoU' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='PG&amp;E_2023' table='[&apos;PG&amp;E_2023$&apos;]' type='table'>
+            <columns gridOrigin='A1:F4753:no:A1:F4753:0' header='yes' outcome='6'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='PG&amp;E_2024' table='[&apos;PG&amp;E_2024$&apos;]' type='table'>
+            <columns gridOrigin='A1:F4753:no:A1:F4753:0' header='yes' outcome='6'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SCE_2023' table='[SCE_2023$]' type='table'>
+            <columns gridOrigin='A1:F2113:no:A1:F2113:0' header='yes' outcome='2'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SCE_2024' table='[SCE_2024$]' type='table'>
+            <columns gridOrigin='A1:F2113:no:A1:F2113:0' header='yes' outcome='6'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SDGE_2023' table='[SDGE_2023$]' type='table'>
+            <columns gridOrigin='A1:F193:no:A1:F193:0' header='yes' outcome='2'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='integer' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SDGE_2024' table='[SDGE_2024$]' type='table'>
+            <columns gridOrigin='A1:F2113:no:A1:F2113:0' header='yes' outcome='6'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='PG&amp;E_2023+' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='Month' />
+            <column datatype='string' name='Customer Class' />
+            <column datatype='string' name='Type' />
+            <column datatype='real' name='Count' />
+            <column datatype='string' name='Fuel_Structure_Type' />
+            <column datatype='string' name='IoU' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='PG&amp;E_2023' table='[&apos;PG&amp;E_2023$&apos;]' type='table'>
+            <columns gridOrigin='A1:F4753:no:A1:F4753:0' header='yes' outcome='6'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='PG&amp;E_2024' table='[&apos;PG&amp;E_2024$&apos;]' type='table'>
+            <columns gridOrigin='A1:F4753:no:A1:F4753:0' header='yes' outcome='6'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SCE_2023' table='[SCE_2023$]' type='table'>
+            <columns gridOrigin='A1:F2113:no:A1:F2113:0' header='yes' outcome='2'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SCE_2024' table='[SCE_2024$]' type='table'>
+            <columns gridOrigin='A1:F2113:no:A1:F2113:0' header='yes' outcome='6'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SDGE_2023' table='[SDGE_2023$]' type='table'>
+            <columns gridOrigin='A1:F193:no:A1:F193:0' header='yes' outcome='2'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='integer' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SDGE_2024' table='[SDGE_2024$]' type='table'>
+            <columns gridOrigin='A1:F2113:no:A1:F2113:0' header='yes' outcome='6'>
+              <column datatype='string' name='Month' ordinal='0' />
+              <column datatype='string' name='Customer Class' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='real' name='Count' ordinal='3' />
+              <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+              <column datatype='string' name='IoU' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[PG&amp;E_2023+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[PG&amp;E_2023+]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Class]</local-name>
+            <parent-name>[PG&amp;E_2023+]</parent-name>
+            <remote-alias>Customer Class</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[PG&amp;E_2023+]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Count]</local-name>
+            <parent-name>[PG&amp;E_2023+]</parent-name>
+            <remote-alias>Count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel_Structure_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Fuel_Structure_Type]</local-name>
+            <parent-name>[PG&amp;E_2023+]</parent-name>
+            <remote-alias>Fuel_Structure_Type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IoU</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[IoU]</local-name>
+            <parent-name>[PG&amp;E_2023+]</parent-name>
+            <remote-alias>IoU</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[PG&amp;E_2023+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[PG&amp;E_2023+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='CountD' caption='Fuel Category' datatype='string' name='[Calculation_1750492942092722180]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;New Construction&quot;) THEN &quot;New Construction&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Upgrades&quot;) THEN &quot;Upgrades&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Power Type' datatype='string' name='[Calculation_1750492942093090821]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;All Electric&quot;) THEN &quot;All Electric&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Mixed Fuel&quot;) THEN &quot;Mixed Fuel&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+      </column>
+      <column caption='All Electric Count' datatype='real' name='[Calculation_1750492942093598726]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_1750492942093090821] = &quot;All Electric&quot; THEN [Count] END' />
+      </column>
+      <column caption='All + Mixed Count' datatype='real' name='[Calculation_1750492942093725703]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_1750492942093090821] = &quot;All Electric&quot; OR [Calculation_1750492942093090821] = &quot;Mixed Fuel&quot; THEN [Count] END' />
+      </column>
+      <column caption='Percent All Electric' datatype='real' name='[Calculation_1750492942094143497]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_1750492942093598726]) / SUM([Calculation_1750492942093725703])*100' />
+      </column>
+      <column caption='Fuel Structure Type' datatype='string' name='[Fuel_Structure_Type]' role='dimension' type='nominal' />
+      <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[Month - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Month], &quot; &quot;, 1 ) )' />
+      </column>
+      <column aggregation='Sum' caption='Year' datatype='integer' name='[Month - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+        <calculation class='tableau' formula='INT( SPLIT( [Month], &quot; &quot;, 2 ) )' />
+      </column>
+      <column caption='Month&amp;Year' datatype='string' hidden='true' name='[Month]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='PG&amp;E_2023' datatype='table' name='[__tableau_internal_object_id__].[PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3]' role='measure' type='quantitative' />
+      <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Fuel Category,Power Type,Io U,Year,Type)' hidden='true' name='[Action (Fuel Category,Power Type,Io U,Year,Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1750492942092722180]' />
+          <groupfilter function='level-members' level='[Calculation_1750492942093090821]' />
+          <groupfilter function='level-members' level='[IoU]' />
+          <groupfilter function='level-members' level='[Month - Split 2]' />
+          <groupfilter function='level-members' level='[Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Io U,Year)' hidden='true' name='[Action (Io U,Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[IoU]' />
+          <groupfilter function='level-members' level='[Month - Split 2]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Io U,Year,Type)' hidden='true' name='[Action (Io U,Year,Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[IoU]' />
+          <groupfilter function='level-members' level='[Month - Split 2]' />
+          <groupfilter function='level-members' level='[Type]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:IoU:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;PG&amp;E&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SDGE&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SCE&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Month' />
+        <field-sort-custom-order field='Customer Class' />
+        <field-sort-custom-order field='Type' />
+        <field-sort-custom-order field='Count' />
+        <field-sort-custom-order field='Calculation_1750492942094143497' />
+        <field-sort-custom-order field='Calculation_1750492942093725703' />
+        <field-sort-custom-order field='Calculation_1750492942093598726' />
+        <field-sort-custom-order field='Calculation_1750492942093090821' />
+        <field-sort-custom-order field='Calculation_1750492942092722180' />
+        <field-sort-custom-order field='Calculation_1750492941804859392' />
+        <field-sort-custom-order field='Calculation_1750492941808607233' />
+        <field-sort-custom-order field='Calculation_1750492941809156098' />
+        <field-sort-custom-order field='Calculation_1750492941809766403' />
+        <field-sort-custom-order field='Fuel_Structure_Type' />
+        <field-sort-custom-order field='IoU' />
+        <field-sort-custom-order field='Sheet' />
+        <field-sort-custom-order field='Table Name' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='PG&amp;E_2023' id='PG&amp;E!2023_EAD688C20DE6474D9A5625B33D206FD3'>
+            <properties context=''>
+              <relation all='true' name='PG&amp;E_2023+' type='union'>
+                <columns header='yes'>
+                  <column datatype='string' name='Month' />
+                  <column datatype='string' name='Customer Class' />
+                  <column datatype='string' name='Type' />
+                  <column datatype='real' name='Count' />
+                  <column datatype='string' name='Fuel_Structure_Type' />
+                  <column datatype='string' name='IoU' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='PG&amp;E_2023' table='[&apos;PG&amp;E_2023$&apos;]' type='table'>
+                  <columns gridOrigin='A1:F4753:no:A1:F4753:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Month' ordinal='0' />
+                    <column datatype='string' name='Customer Class' ordinal='1' />
+                    <column datatype='string' name='Type' ordinal='2' />
+                    <column datatype='real' name='Count' ordinal='3' />
+                    <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+                    <column datatype='string' name='IoU' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='PG&amp;E_2024' table='[&apos;PG&amp;E_2024$&apos;]' type='table'>
+                  <columns gridOrigin='A1:F4753:no:A1:F4753:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Month' ordinal='0' />
+                    <column datatype='string' name='Customer Class' ordinal='1' />
+                    <column datatype='string' name='Type' ordinal='2' />
+                    <column datatype='real' name='Count' ordinal='3' />
+                    <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+                    <column datatype='string' name='IoU' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SCE_2023' table='[SCE_2023$]' type='table'>
+                  <columns gridOrigin='A1:F2113:no:A1:F2113:0' header='yes' outcome='2'>
+                    <column datatype='string' name='Month' ordinal='0' />
+                    <column datatype='string' name='Customer Class' ordinal='1' />
+                    <column datatype='string' name='Type' ordinal='2' />
+                    <column datatype='real' name='Count' ordinal='3' />
+                    <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+                    <column datatype='string' name='IoU' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SCE_2024' table='[SCE_2024$]' type='table'>
+                  <columns gridOrigin='A1:F2113:no:A1:F2113:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Month' ordinal='0' />
+                    <column datatype='string' name='Customer Class' ordinal='1' />
+                    <column datatype='string' name='Type' ordinal='2' />
+                    <column datatype='real' name='Count' ordinal='3' />
+                    <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+                    <column datatype='string' name='IoU' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SDGE_2023' table='[SDGE_2023$]' type='table'>
+                  <columns gridOrigin='A1:F193:no:A1:F193:0' header='yes' outcome='2'>
+                    <column datatype='string' name='Month' ordinal='0' />
+                    <column datatype='string' name='Customer Class' ordinal='1' />
+                    <column datatype='string' name='Type' ordinal='2' />
+                    <column datatype='integer' name='Count' ordinal='3' />
+                    <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+                    <column datatype='string' name='IoU' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.1cdus8y03ql3rk1a1vz6d1i78ef3' name='SDGE_2024' table='[SDGE_2024$]' type='table'>
+                  <columns gridOrigin='A1:F2113:no:A1:F2113:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Month' ordinal='0' />
+                    <column datatype='string' name='Customer Class' ordinal='1' />
+                    <column datatype='string' name='Type' ordinal='2' />
+                    <column datatype='real' name='Count' ordinal='3' />
+                    <column datatype='string' name='Fuel_Structure_Type' ordinal='4' />
+                    <column datatype='string' name='IoU' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0da79ua18pd6p913n58zr119dije'>
+      <datasources>
+        <datasource caption='PG&amp;E_2023+ (2023&amp;2024_Composite)' name='federated.0da79ua18pd6p913n58zr119dije' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0da79ua18pd6p913n58zr119dije'>
+        <column aggregation='CountD' caption='Fuel Category' datatype='string' name='[Calculation_1750492942092722180]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;New Construction&quot;) THEN &quot;New Construction&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Upgrades&quot;) THEN &quot;Upgrades&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+        </column>
+        <column caption='Power Type' datatype='string' name='[Calculation_1750492942093090821]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;All Electric&quot;) THEN &quot;All Electric&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Mixed Fuel&quot;) THEN &quot;Mixed Fuel&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+        </column>
+        <column datatype='string' name='[Customer Class]' role='dimension' type='nominal' />
+        <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+        <column caption='Month' datatype='string' name='[Month - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+          <calculation class='tableau' formula='TRIM( SPLIT( [Month], &quot; &quot;, 1 ) )' />
+        </column>
+        <column aggregation='Sum' caption='Year' datatype='integer' name='[Month - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+          <calculation class='tableau' formula='INT( SPLIT( [Month], &quot; &quot;, 2 ) )' />
+        </column>
+        <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+        <column-instance column='[Calculation_1750492942092722180]' derivation='None' name='[none:Calculation_1750492942092722180:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1750492942093090821]' derivation='None' name='[none:Calculation_1750492942093090821:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Customer Class]' derivation='None' name='[none:Customer Class:nk]' pivot='key' type='nominal' />
+        <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Month - Split 1]' derivation='None' name='[none:Month - Split 1:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Month - Split 2]' derivation='None' name='[none:Month - Split 2:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942092722180:nk]'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:Calculation_1750492942092722180:nk]' />
+          <groupfilter function='member' level='[none:Calculation_1750492942092722180:nk]' member='%null%' />
+        </groupfilter>
+        <target field='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942092722180:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:Calculation_1750492942093090821:nk]' />
+          <groupfilter function='member' level='[none:Calculation_1750492942093090821:nk]' member='%null%' />
+        </groupfilter>
+        <target field='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[none:Customer Class:nk]'>
+        <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Residential&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.0da79ua18pd6p913n58zr119dije].[none:Customer Class:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:IoU:nk]' />
+          <groupfilter function='member' level='[none:IoU:nk]' member='%null%' />
+        </groupfilter>
+        <target field='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 1:nk]'>
+        <groupfilter function='level-members' level='[none:Month - Split 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 1:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Month - Split 2:ok]' member='2023' />
+          <groupfilter function='member' level='[none:Month - Split 2:ok]' member='2024' />
+        </groupfilter>
+        <target field='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok]' />
+      </filter>
+      <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]'>
+        <groupfilter function='member' level='[none:Type:nk]' member='&quot;Total Electric Line Extension Requests Received (Applications)&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_BE5A1D6BB2B14ACBB8601285E3775731]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='2023 &amp; 2024 California Line Extension Data' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='2023 &amp; 2024 California Line Extension Data' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_FD28583FC4594E26A770581D7D5CEA35]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='2023 &amp; 2024 California Line Extension Data' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='2023 &amp; 2024 California Line Extension Data' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_3F414C3AA2CA434DB386F67CF4BF1327]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='2023 &amp; 2024 California Line Extension Data' type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='2023 &amp; 2024 California Line Extension Data' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#b07aa1' italic='true'>Yearwise Percent All Electric</run>
+            <run fontcolor='#b07aa1'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PG&amp;E_2023+ (2023&amp;2024_Composite)' name='federated.0da79ua18pd6p913n58zr119dije' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0da79ua18pd6p913n58zr119dije'>
+            <column aggregation='CountD' caption='Fuel Category' datatype='string' name='[Calculation_1750492942092722180]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;New Construction&quot;) THEN &quot;New Construction&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Upgrades&quot;) THEN &quot;Upgrades&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Power Type' datatype='string' name='[Calculation_1750492942093090821]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;All Electric&quot;) THEN &quot;All Electric&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Mixed Fuel&quot;) THEN &quot;Mixed Fuel&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+            </column>
+            <column caption='All Electric Count' datatype='real' name='[Calculation_1750492942093598726]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_1750492942093090821] = &quot;All Electric&quot; THEN [Count] END' />
+            </column>
+            <column caption='All + Mixed Count' datatype='real' name='[Calculation_1750492942093725703]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_1750492942093090821] = &quot;All Electric&quot; OR [Calculation_1750492942093090821] = &quot;Mixed Fuel&quot; THEN [Count] END' />
+            </column>
+            <column caption='Percent All Electric' datatype='real' name='[Calculation_1750492942094143497]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_1750492942093598726]) / SUM([Calculation_1750492942093725703])*100' />
+            </column>
+            <column datatype='real' name='[Count]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Customer Class]' role='dimension' type='nominal' />
+            <column caption='Fuel Structure Type' datatype='string' name='[Fuel_Structure_Type]' role='dimension' type='nominal' />
+            <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[Month - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Month], &quot; &quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[Month - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+              <calculation class='tableau' formula='INT( SPLIT( [Month], &quot; &quot;, 2 ) )' />
+            </column>
+            <column caption='Month&amp;Year' datatype='string' hidden='true' name='[Month]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1750492942092722180]' derivation='None' name='[none:Calculation_1750492942092722180:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1750492942093090821]' derivation='None' name='[none:Calculation_1750492942093090821:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Class]' derivation='None' name='[none:Customer Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month - Split 1]' derivation='None' name='[none:Month - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month - Split 2]' derivation='None' name='[none:Month - Split 2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1750492942094143497]' derivation='User' name='[usr:Calculation_1750492942094143497:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[Action (Io U,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_3F414C3AA2CA434DB386F67CF4BF1327]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[IoU]' member='&quot;SDGE&quot;' />
+              <groupfilter function='member' level='[Month - Split 2]' member='2024' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942092722180:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 1:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Customer Class:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[Action (Io U,Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]' value='440' />
+            <format attr='text-align' value='left' />
+            <format attr='height' field='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok]' value='59' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' field='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]' value='center' />
+            <format attr='vertical-align' data-class='subtotal' field='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]' value='center' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0da79ua18pd6p913n58zr119dije].[usr:Calculation_1750492942094143497:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk] / [federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok])</rows>
+        <cols>[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]</cols>
+      </table>
+      <simple-id uuid='{72CA7989-0CF2-414F-8399-F7BC0B0EC82F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#b07aa1' italic='true'>Overall View Of Received Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PG&amp;E_2023+ (2023&amp;2024_Composite)' name='federated.0da79ua18pd6p913n58zr119dije' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0da79ua18pd6p913n58zr119dije'>
+            <column aggregation='CountD' caption='Fuel Category' datatype='string' name='[Calculation_1750492942092722180]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;New Construction&quot;) THEN &quot;New Construction&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Upgrades&quot;) THEN &quot;Upgrades&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Power Type' datatype='string' name='[Calculation_1750492942093090821]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;All Electric&quot;) THEN &quot;All Electric&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Mixed Fuel&quot;) THEN &quot;Mixed Fuel&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[Count]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Customer Class]' role='dimension' type='nominal' />
+            <column caption='Fuel Structure Type' datatype='string' name='[Fuel_Structure_Type]' role='dimension' type='nominal' />
+            <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[Month - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Month], &quot; &quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[Month - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+              <calculation class='tableau' formula='INT( SPLIT( [Month], &quot; &quot;, 2 ) )' />
+            </column>
+            <column caption='Month&amp;Year' datatype='string' hidden='true' name='[Month]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1750492942092722180]' derivation='None' name='[none:Calculation_1750492942092722180:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1750492942093090821]' derivation='None' name='[none:Calculation_1750492942093090821:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Class]' derivation='None' name='[none:Customer Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month - Split 1]' derivation='None' name='[none:Month - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month - Split 2]' derivation='None' name='[none:Month - Split 2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Count]' derivation='Sum' name='[sum:Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[Action (Io U,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_3F414C3AA2CA434DB386F67CF4BF1327]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[IoU]' member='&quot;SDGE&quot;' />
+              <groupfilter function='member' level='[Month - Split 2]' member='2024' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0da79ua18pd6p913n58zr119dije].[Action (Io U,Year,Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_FD28583FC4594E26A770581D7D5CEA35]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[IoU]' />
+              <groupfilter function='level-members' level='[Month - Split 2]' />
+              <groupfilter function='level-members' level='[Type]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942092722180:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 1:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Customer Class:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[Action (Io U,Year,Type)]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[Action (Io U,Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0da79ua18pd6p913n58zr119dije].[sum:Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk] / ([federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok] / ([federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk] / [federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942092722180:nk])))</rows>
+        <cols>[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]</cols>
+      </table>
+      <simple-id uuid='{C4F4872C-958F-4FBA-9862-1CF490B052AA}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#b07aa1' italic='true'>IoU&apos;s Vs Percent All Electric</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PG&amp;E_2023+ (2023&amp;2024_Composite)' name='federated.0da79ua18pd6p913n58zr119dije' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0da79ua18pd6p913n58zr119dije'>
+            <column aggregation='CountD' caption='Fuel Category' datatype='string' name='[Calculation_1750492942092722180]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;New Construction&quot;) THEN &quot;New Construction&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Upgrades&quot;) THEN &quot;Upgrades&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Power Type' datatype='string' name='[Calculation_1750492942093090821]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;All Electric&quot;) THEN &quot;All Electric&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Mixed Fuel&quot;) THEN &quot;Mixed Fuel&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+            </column>
+            <column caption='All Electric Count' datatype='real' name='[Calculation_1750492942093598726]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_1750492942093090821] = &quot;All Electric&quot; THEN [Count] END' />
+            </column>
+            <column caption='All + Mixed Count' datatype='real' name='[Calculation_1750492942093725703]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_1750492942093090821] = &quot;All Electric&quot; OR [Calculation_1750492942093090821] = &quot;Mixed Fuel&quot; THEN [Count] END' />
+            </column>
+            <column caption='Percent All Electric' datatype='real' name='[Calculation_1750492942094143497]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_1750492942093598726]) / SUM([Calculation_1750492942093725703])*100' />
+            </column>
+            <column datatype='real' name='[Count]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Customer Class]' role='dimension' type='nominal' />
+            <column caption='Fuel Structure Type' datatype='string' name='[Fuel_Structure_Type]' role='dimension' type='nominal' />
+            <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[Month - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Month], &quot; &quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[Month - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+              <calculation class='tableau' formula='INT( SPLIT( [Month], &quot; &quot;, 2 ) )' />
+            </column>
+            <column caption='Month&amp;Year' datatype='string' hidden='true' name='[Month]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1750492942092722180]' derivation='None' name='[none:Calculation_1750492942092722180:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1750492942093090821]' derivation='None' name='[none:Calculation_1750492942093090821:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Class]' derivation='None' name='[none:Customer Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month - Split 1]' derivation='None' name='[none:Month - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month - Split 2]' derivation='None' name='[none:Month - Split 2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1750492942094143497]' derivation='User' name='[usr:Calculation_1750492942094143497:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942092722180:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 1:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Customer Class:nk]</column>
+            <column>[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]' value='40' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]</rows>
+        <cols>([federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok] * [federated.0da79ua18pd6p913n58zr119dije].[usr:Calculation_1750492942094143497:qk])</cols>
+      </table>
+      <simple-id uuid='{7AD0A876-646C-44B6-A313-BE3F1E9498B0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='2023 &amp; 2024 California Line Extension Data'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='20' italic='true'>2023 &amp; 2024 California Line Extension Data </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='PG&amp;E_2023+ (2023&amp;2024_Composite)' name='federated.0da79ua18pd6p913n58zr119dije' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0da79ua18pd6p913n58zr119dije'>
+        <column aggregation='CountD' caption='Fuel Category' datatype='string' name='[Calculation_1750492942092722180]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;New Construction&quot;) THEN &quot;New Construction&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Upgrades&quot;) THEN &quot;Upgrades&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+        </column>
+        <column caption='Power Type' datatype='string' name='[Calculation_1750492942093090821]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF CONTAINS([Fuel_Structure_Type], &quot;All Electric&quot;) THEN &quot;All Electric&quot;&#13;&#10;ELSEIF CONTAINS([Fuel_Structure_Type], &quot;Mixed Fuel&quot;) THEN &quot;Mixed Fuel&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+        </column>
+        <column datatype='string' name='[Customer Class]' role='dimension' type='nominal' />
+        <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+        <column caption='Month' datatype='string' name='[Month - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+          <calculation class='tableau' formula='TRIM( SPLIT( [Month], &quot; &quot;, 1 ) )' />
+        </column>
+        <column aggregation='Sum' caption='Year' datatype='integer' name='[Month - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0da79ua18pd6p913n58zr119dije].[Month]'>
+          <calculation class='tableau' formula='INT( SPLIT( [Month], &quot; &quot;, 2 ) )' />
+        </column>
+        <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+        <column-instance column='[Calculation_1750492942092722180]' derivation='None' name='[none:Calculation_1750492942092722180:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1750492942093090821]' derivation='None' name='[none:Calculation_1750492942093090821:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Customer Class]' derivation='None' name='[none:Customer Class:nk]' pivot='key' type='nominal' />
+        <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Month - Split 1]' derivation='None' name='[none:Month - Split 1:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Month - Split 2]' derivation='None' name='[none:Month - Split 2:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='21' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='7875' id='22' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90125' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='8875'>
+              <zone h='90125' id='5' type-v2='layout-basic' w='60400' x='800' y='8875' />
+              <zone fixed-size='380' h='90125' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='38000' x='61200' y='8875'>
+                <zone h='11645' id='8' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 1:nk]' type-v2='filter' w='38000' x='61200' y='8875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11645' id='9' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Customer Class:nk]' type-v2='filter' w='38000' x='61200' y='20520'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11645' id='10' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok]' type-v2='filter' w='38000' x='61200' y='32165'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11645' id='11' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]' type-v2='filter' w='38000' x='61200' y='43810'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11645' id='12' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942092722180:nk]' type-v2='filter' w='38000' x='61200' y='55455'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='154' h='20250' id='17' is-fixed='true' name='Sheet 3' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]' type-v2='filter' w='38000' x='61200' y='67100'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11650' id='18' name='Sheet 3' pane-specification-id='0' param='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]' type-v2='color' w='38000' x='61200' y='87350'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='28375' id='3' name='Sheet 1' w='45400' x='800' y='8375' />
+        <zone h='25625' id='14' name='Sheet 2' w='61400' x='-200' y='38625' />
+        <zone h='30875' id='16' name='Sheet 3' w='60000' x='1400' y='68375' />
+        <zone h='18000' id='19' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]' type-v2='filter' values='database' w='12300' x='47100' y='16375' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='20' italic='true'>2023 &amp; 2024 California Line Extension Data </run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='25' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='7875' id='22' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11645' id='8' mode='checkdropdown' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 1:nk]' type-v2='filter' w='38000' x='61200' y='8875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11645' id='9' mode='checkdropdown' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Customer Class:nk]' type-v2='filter' w='38000' x='61200' y='20520'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11645' id='10' mode='checkdropdown' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok]' type-v2='filter' w='38000' x='61200' y='32165'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11645' id='11' mode='checkdropdown' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]' type-v2='filter' w='38000' x='61200' y='43810'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11645' id='12' mode='checkdropdown' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942092722180:nk]' type-v2='filter' w='38000' x='61200' y='55455'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18000' id='19' mode='checkdropdown' name='Sheet 1' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]' type-v2='filter' values='database' w='12300' x='47100' y='16375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='227' h='28375' id='3' is-fixed='true' name='Sheet 1' w='45400' x='800' y='8375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='205' h='25625' id='14' is-fixed='true' name='Sheet 2' w='61400' x='-200' y='38625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='154' h='20250' id='17' mode='checkdropdown' name='Sheet 3' param='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]' type-v2='filter' w='38000' x='61200' y='67100'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='247' h='30875' id='16' is-fixed='true' name='Sheet 3' w='60000' x='1400' y='68375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11650' id='18' name='Sheet 3' pane-specification-id='0' param='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]' type-v2='color' w='38000' x='61200' y='87350'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1B402DCC-0118-412D-96B8-2092E26A902F}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='5187' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='6017' />
+            <zone h='82676' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='16494'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Year wise percent of Electric' captured-sheet='Sheet 1' id='1' />
+                  <story-point caption='Overall view of the received data' captured-sheet='Sheet 2' id='2' />
+                  <story-point caption='IoU&apos;s Vs Percent Electric' captured-sheet='Sheet 3' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{7C8E157B-9E22-41A0-9BCF-CCB342A20EFC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='450'>
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]' type='filter' />
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 1:nk]' type='filter' />
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Customer Class:nk]' type='filter' />
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Month - Split 2:ok]' type='filter' />
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]' type='filter' />
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942092722180:nk]' type='filter' />
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0CCDB938-2049-4DFC-A405-1F7339532DDA}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]' type='filter' />
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BBAB03B6-1DDB-4B73-AF1B-1E5F7ED9A843}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Calculation_1750492942093090821:nk]' type='filter' />
+            <card param='[federated.0da79ua18pd6p913n58zr119dije].[none:Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0da79ua18pd6p913n58zr119dije].[none:IoU:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E926B2BA-1A16-4B11-8BF8-28A63EDBE11C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='2023 &amp; 2024 California Line Extension Data'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3' />
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{28A2D817-B3CC-4F31-B15B-301E33F8CB9F}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{1F8EF0BE-77AD-49AF-9194-92C991413213}' />
+    </window>
+  </windows>
+</workbook>

@@ -1,0 +1,1580 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.24.0425.1414                               -->
+<workbook original-version='18.1' source-build='2023.3.5 (20233.24.0425.1414)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Combination (Q1_2025_Composite_Summary_Included)' inline='true' name='federated.0tco2x60f33vbs1fczzwc0db7g1g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Q1_2025_Composite_Summary_Included' name='excel-direct.0u1oacv1gd15bk189frki1r9f4ek'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Rford/OneDrive - California Energy Commission/Documents/Analysis - Scripts and Code/Electric-Line-Extension-Data/data/processed/Q1_2025_Composite_Summary_Included.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0u1oacv1gd15bk189frki1r9f4ek' name='Combination' table='[Combination$]' type='table'>
+          <columns gridOrigin='A1:T640:no:A1:T640:0' header='yes' outcome='2'>
+            <column datatype='string' name='New Construction / Upgrade' ordinal='0' />
+            <column datatype='string' name='Mixed Fuel / All Electric' ordinal='1' />
+            <column datatype='date' name='Months' ordinal='2' />
+            <column datatype='string' name='Customer Class' ordinal='3' />
+            <column datatype='string' name='Baseline / Climate Zone' ordinal='4' />
+            <column datatype='string' name='Multi Dwelling' ordinal='5' />
+            <column datatype='real' name='Total Discounts (Non-Exempted Projects)' ordinal='6' />
+            <column datatype='real' name='Total Allowances (Non-Exempted Projects)' ordinal='7' />
+            <column datatype='real' name='Total Refund Payments Provided to Builders (Non-Exempted Projects)' ordinal='8' />
+            <column datatype='integer' name='Total Discounts (Exempted projects)' ordinal='9' />
+            <column datatype='integer' name='Total Allowances (Exempted projects)' ordinal='10' />
+            <column datatype='integer' name='Total Refund Payments Provided to Builders  (Exempted projects)' ordinal='11' />
+            <column datatype='real' name='Total Estimated Non-Refundable' ordinal='12' />
+            <column datatype='real' name='Total Estimated Refundable' ordinal='13' />
+            <column datatype='string' name='Average Number of days between full payment and Project Energization' ordinal='14' />
+            <column datatype='integer' name='Total Electric Line Extensions Energized' ordinal='15' />
+            <column datatype='integer' name='Total Electric Line Extension Applications (IOU Installed)' ordinal='16' />
+            <column datatype='integer' name='Total Electric Line Extension Applications (Applicant Installed)' ordinal='17' />
+            <column datatype='string' name='IoU' ordinal='18' />
+            <column datatype='integer' name='Year' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0u1oacv1gd15bk189frki1r9f4ek' name='Combination' table='[Combination$]' type='table'>
+          <columns gridOrigin='A1:T640:no:A1:T640:0' header='yes' outcome='2'>
+            <column datatype='string' name='New Construction / Upgrade' ordinal='0' />
+            <column datatype='string' name='Mixed Fuel / All Electric' ordinal='1' />
+            <column datatype='date' name='Months' ordinal='2' />
+            <column datatype='string' name='Customer Class' ordinal='3' />
+            <column datatype='string' name='Baseline / Climate Zone' ordinal='4' />
+            <column datatype='string' name='Multi Dwelling' ordinal='5' />
+            <column datatype='real' name='Total Discounts (Non-Exempted Projects)' ordinal='6' />
+            <column datatype='real' name='Total Allowances (Non-Exempted Projects)' ordinal='7' />
+            <column datatype='real' name='Total Refund Payments Provided to Builders (Non-Exempted Projects)' ordinal='8' />
+            <column datatype='integer' name='Total Discounts (Exempted projects)' ordinal='9' />
+            <column datatype='integer' name='Total Allowances (Exempted projects)' ordinal='10' />
+            <column datatype='integer' name='Total Refund Payments Provided to Builders  (Exempted projects)' ordinal='11' />
+            <column datatype='real' name='Total Estimated Non-Refundable' ordinal='12' />
+            <column datatype='real' name='Total Estimated Refundable' ordinal='13' />
+            <column datatype='string' name='Average Number of days between full payment and Project Energization' ordinal='14' />
+            <column datatype='integer' name='Total Electric Line Extensions Energized' ordinal='15' />
+            <column datatype='integer' name='Total Electric Line Extension Applications (IOU Installed)' ordinal='16' />
+            <column datatype='integer' name='Total Electric Line Extension Applications (Applicant Installed)' ordinal='17' />
+            <column datatype='string' name='IoU' ordinal='18' />
+            <column datatype='integer' name='Year' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T640:no:A1:T640:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Construction / Upgrade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[New Construction / Upgrade]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>New Construction / Upgrade</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mixed Fuel / All Electric</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Mixed Fuel / All Electric]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Mixed Fuel / All Electric</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Months]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Months</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Class]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Customer Class</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Baseline / Climate Zone</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Baseline / Climate Zone]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Baseline / Climate Zone</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Multi Dwelling</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Multi Dwelling]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Multi Dwelling</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Discounts (Non-Exempted Projects)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Discounts (Non-Exempted Projects)]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Discounts (Non-Exempted Projects)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Allowances (Non-Exempted Projects)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Allowances (Non-Exempted Projects)]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Allowances (Non-Exempted Projects)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Refund Payments Provided to Builders (Non-Exempted Projects)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Refund Payments Provided to Builders (Non-Exempted Projects)]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Refund Payments Provided to Builders (Non-Exempted Projects)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Discounts (Exempted projects)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Discounts (Exempted projects)]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Discounts (Exempted projects)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Allowances (Exempted projects)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Allowances (Exempted projects)]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Allowances (Exempted projects)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Refund Payments Provided to Builders  (Exempted projects)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Refund Payments Provided to Builders  (Exempted projects)]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Refund Payments Provided to Builders  (Exempted projects)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Estimated Non-Refundable</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Estimated Non-Refundable]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Estimated Non-Refundable</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Estimated Refundable</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Estimated Refundable]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Estimated Refundable</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Number of days between full payment and Project Energization</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Average Number of days between full payment and Project Energization]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Average Number of days between full payment and Project Energization</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Electric Line Extensions Energized</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Electric Line Extensions Energized]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Electric Line Extensions Energized</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Electric Line Extension Applications (IOU Installed)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Electric Line Extension Applications (IOU Installed)]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Electric Line Extension Applications (IOU Installed)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Electric Line Extension Applications (Applicant Installed)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Electric Line Extension Applications (Applicant Installed)]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Total Electric Line Extension Applications (Applicant Installed)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IoU</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[IoU]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>IoU</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Combination]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Combination_DA91D07B26EA472F980D641736E63287]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total ELE Applications' datatype='integer' name='[Calculation_1233704853081579520]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Total Electric Line Extension Applications (Applicant Installed)]+[Total Electric Line Extension Applications (IOU Installed)]' />
+      </column>
+      <column caption='All + Mixed' datatype='integer' name='[Calculation_1233704853094031362]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Mixed Fuel / All Electric] = &quot;All Electric&quot; OR [Mixed Fuel / All Electric] = &quot;Mixed Fuel&quot; THEN [Calculation_1233704853081579520] END' />
+      </column>
+      <column caption='All Electric' datatype='integer' name='[Calculation_1233704853097250821]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Mixed Fuel / All Electric] = &quot;All Electric&quot; THEN [Calculation_1233704853081579520] END' />
+      </column>
+      <column caption='Percent All Electric' datatype='real' name='[Calculation_1233704853098008582]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_1233704853097250821]) / SUM([Calculation_1233704853094031362])*100' />
+      </column>
+      <column datatype='string' name='[Customer Class]' role='dimension' type='nominal' />
+      <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Mixed Fuel / All Electric]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Total Electric Line Extensions Energized]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Combination' datatype='table' name='[__tableau_internal_object_id__].[Combination_DA91D07B26EA472F980D641736E63287]' role='measure' type='quantitative' />
+      <column-instance column='[Customer Class]' derivation='None' name='[none:Customer Class:nk]' pivot='key' type='nominal' />
+      <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Mixed Fuel / All Electric]' derivation='None' name='[none:Mixed Fuel / All Electric:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1233704853081579520]' derivation='Sum' name='[sum:Calculation_1233704853081579520:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Electric Line Extensions Energized]' derivation='Sum' name='[sum:Total Electric Line Extensions Energized:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1233704853098008582]' derivation='User' name='[usr:Calculation_1233704853098008582:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Calculation_1233704853081579520:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0tco2x60f33vbs1fczzwc0db7g1g].[usr:Calculation_1233704853098008582:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extensions Energized:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:IoU:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;PG&amp;E&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SDGE&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SCE&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Customer Class:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Street and Outdoor area Lighting&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Agency (City, County, Caltrans)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Industrial&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Telecommunications&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mixed Use (Commercial / Residential)&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Agriculture&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;N/A&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Temporary Services&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Residential&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Commercial&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Commercial / Industrial&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Mixed Fuel / All Electric:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;All Electric&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mixed Fuel&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Combination' id='Combination_DA91D07B26EA472F980D641736E63287'>
+            <properties context=''>
+              <relation connection='excel-direct.0u1oacv1gd15bk189frki1r9f4ek' name='Combination' table='[Combination$]' type='table'>
+                <columns gridOrigin='A1:T640:no:A1:T640:0' header='yes' outcome='2'>
+                  <column datatype='string' name='New Construction / Upgrade' ordinal='0' />
+                  <column datatype='string' name='Mixed Fuel / All Electric' ordinal='1' />
+                  <column datatype='date' name='Months' ordinal='2' />
+                  <column datatype='string' name='Customer Class' ordinal='3' />
+                  <column datatype='string' name='Baseline / Climate Zone' ordinal='4' />
+                  <column datatype='string' name='Multi Dwelling' ordinal='5' />
+                  <column datatype='real' name='Total Discounts (Non-Exempted Projects)' ordinal='6' />
+                  <column datatype='real' name='Total Allowances (Non-Exempted Projects)' ordinal='7' />
+                  <column datatype='real' name='Total Refund Payments Provided to Builders (Non-Exempted Projects)' ordinal='8' />
+                  <column datatype='integer' name='Total Discounts (Exempted projects)' ordinal='9' />
+                  <column datatype='integer' name='Total Allowances (Exempted projects)' ordinal='10' />
+                  <column datatype='integer' name='Total Refund Payments Provided to Builders  (Exempted projects)' ordinal='11' />
+                  <column datatype='real' name='Total Estimated Non-Refundable' ordinal='12' />
+                  <column datatype='real' name='Total Estimated Refundable' ordinal='13' />
+                  <column datatype='string' name='Average Number of days between full payment and Project Energization' ordinal='14' />
+                  <column datatype='integer' name='Total Electric Line Extensions Energized' ordinal='15' />
+                  <column datatype='integer' name='Total Electric Line Extension Applications (IOU Installed)' ordinal='16' />
+                  <column datatype='integer' name='Total Electric Line Extension Applications (Applicant Installed)' ordinal='17' />
+                  <column datatype='string' name='IoU' ordinal='18' />
+                  <column datatype='integer' name='Year' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Combination (Q1_2025_Composite_Summary_Included)' name='federated.0tco2x60f33vbs1fczzwc0db7g1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tco2x60f33vbs1fczzwc0db7g1g'>
+            <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Months]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (Applicant Installed)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (IOU Installed)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Electric Line Extensions Energized]' role='measure' type='quantitative' />
+            <column-instance column='[Months]' derivation='Month' name='[mn:Months:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Electric Line Extension Applications (Applicant Installed)]' derivation='Sum' name='[sum:Total Electric Line Extension Applications (Applicant Installed):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Electric Line Extension Applications (IOU Installed)]' derivation='Sum' name='[sum:Total Electric Line Extension Applications (IOU Installed):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Electric Line Extensions Energized]' derivation='Sum' name='[sum:Total Electric Line Extensions Energized:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extension Applications (Applicant Installed):qk]' value='137' />
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extensions Energized:qk]' value='137' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[mn:Months:ok]' value='98' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extension Applications (Applicant Installed):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extensions Energized:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extension Applications (IOU Installed):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extension Applications (Applicant Installed):qk] + ([federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extension Applications (IOU Installed):qk] + [federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extensions Energized:qk]))</rows>
+        <cols>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[mn:Months:ok]</cols>
+      </table>
+      <simple-id uuid='{984725A5-0BA5-4123-BD83-1D88AC1EE98B}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Combination (Q1_2025_Composite_Summary_Included)' name='federated.0tco2x60f33vbs1fczzwc0db7g1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tco2x60f33vbs1fczzwc0db7g1g'>
+            <column datatype='string' name='[Customer Class]' role='dimension' type='nominal' />
+            <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Mixed Fuel / All Electric]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Electric Line Extensions Energized]' role='measure' type='quantitative' />
+            <column-instance column='[Customer Class]' derivation='None' name='[none:Customer Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mixed Fuel / All Electric]' derivation='None' name='[none:Mixed Fuel / All Electric:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Electric Line Extensions Energized]' derivation='Sum' name='[sum:Total Electric Line Extensions Energized:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Commercial&quot;' />
+              <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Commercial / Industrial&quot;' />
+              <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Industrial&quot;' />
+              <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Mixed Use (Commercial / Residential)&quot;' />
+              <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Residential&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:IoU:nk]' />
+              <groupfilter function='member' level='[none:IoU:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]</column>
+            <column>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' value='29' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' value='220' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' value='8' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extensions Energized:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk] / [federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk])</rows>
+        <cols>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extensions Energized:qk]</cols>
+      </table>
+      <simple-id uuid='{7D1BFF44-9BE9-49E8-9D68-93B50300B46E}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Combination (Q1_2025_Composite_Summary_Included)' name='federated.0tco2x60f33vbs1fczzwc0db7g1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tco2x60f33vbs1fczzwc0db7g1g'>
+            <column caption='Total ELE Applications' datatype='integer' name='[Calculation_1233704853081579520]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total Electric Line Extension Applications (Applicant Installed)]+[Total Electric Line Extension Applications (IOU Installed)]' />
+            </column>
+            <column datatype='string' name='[Customer Class]' role='dimension' type='nominal' />
+            <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Mixed Fuel / All Electric]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (Applicant Installed)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (IOU Installed)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Electric Line Extensions Energized]' role='measure' type='quantitative' />
+            <column-instance column='[Customer Class]' derivation='None' name='[none:Customer Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mixed Fuel / All Electric]' derivation='None' name='[none:Mixed Fuel / All Electric:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1233704853081579520]' derivation='Sum' name='[sum:Calculation_1233704853081579520:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Electric Line Extensions Energized]' derivation='Sum' name='[sum:Total Electric Line Extensions Energized:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Customer Class:nk]' />
+              <groupfilter function='except'>
+                <groupfilter function='level-members' level='[none:Customer Class:nk]' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Commercial&quot;' />
+                  <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Commercial / Industrial&quot;' />
+                  <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Industrial&quot;' />
+                  <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Mixed Use (Commercial / Residential)&quot;' />
+                  <groupfilter function='member' level='[none:Customer Class:nk]' member='&quot;Residential&quot;' />
+                  <groupfilter function='member' level='[none:Customer Class:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' value='95' />
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Calculation_1233704853081579520:qk]' value='88' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' value='25' />
+            <format attr='wrap' value='on' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' value='-90' />
+            <format attr='font-size' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' value='8' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' />
+              <lod column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extensions Energized:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Calculation_1233704853081579520:qk]</rows>
+        <cols>([federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk] / ([federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk] / [federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]))</cols>
+      </table>
+      <simple-id uuid='{85A0A226-B19F-4E62-9569-F7B6A2F44A99}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>ELE Overall Summary</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Combination (Q1_2025_Composite_Summary_Included)' name='federated.0tco2x60f33vbs1fczzwc0db7g1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tco2x60f33vbs1fczzwc0db7g1g'>
+            <column caption='Total ELE Applications' datatype='integer' name='[Calculation_1233704853081579520]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total Electric Line Extension Applications (Applicant Installed)]+[Total Electric Line Extension Applications (IOU Installed)]' />
+            </column>
+            <column caption='All + Mixed' datatype='integer' name='[Calculation_1233704853094031362]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Mixed Fuel / All Electric] = &quot;All Electric&quot; OR [Mixed Fuel / All Electric] = &quot;Mixed Fuel&quot; THEN [Calculation_1233704853081579520] END' />
+            </column>
+            <column caption='All Electric' datatype='integer' name='[Calculation_1233704853097250821]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Mixed Fuel / All Electric] = &quot;All Electric&quot; THEN [Calculation_1233704853081579520] END' />
+            </column>
+            <column caption='Percent All Electric' datatype='real' name='[Calculation_1233704853098008582]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_1233704853097250821]) / SUM([Calculation_1233704853094031362])*100' />
+            </column>
+            <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Mixed Fuel / All Electric]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (Applicant Installed)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (IOU Installed)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Electric Line Extensions Energized]' role='measure' type='quantitative' />
+            <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mixed Fuel / All Electric]' derivation='None' name='[none:Mixed Fuel / All Electric:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1233704853081579520]' derivation='Sum' name='[sum:Calculation_1233704853081579520:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Electric Line Extensions Energized]' derivation='Sum' name='[sum:Total Electric Line Extensions Energized:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1233704853098008582]' derivation='User' name='[usr:Calculation_1233704853098008582:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0tco2x60f33vbs1fczzwc0db7g1g].[usr:Calculation_1233704853098008582:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Calculation_1233704853081579520:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extensions Energized:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]'>
+            <groupfilter function='level-members' level='[none:Mixed Fuel / All Electric:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]</column>
+            <column>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]' value='207' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]' value='64' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]</rows>
+        <cols>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{D3F0CD10-182C-431F-AEB6-6506C7F4C1FA}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#b07aa1' italic='true'>IOU vs Percent All Electric</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Combination (Q1_2025_Composite_Summary_Included)' name='federated.0tco2x60f33vbs1fczzwc0db7g1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tco2x60f33vbs1fczzwc0db7g1g'>
+            <column caption='Total ELE Applications' datatype='integer' name='[Calculation_1233704853081579520]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total Electric Line Extension Applications (Applicant Installed)]+[Total Electric Line Extension Applications (IOU Installed)]' />
+            </column>
+            <column caption='All + Mixed' datatype='integer' name='[Calculation_1233704853094031362]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Mixed Fuel / All Electric] = &quot;All Electric&quot; OR [Mixed Fuel / All Electric] = &quot;Mixed Fuel&quot; THEN [Calculation_1233704853081579520] END' />
+            </column>
+            <column caption='All Electric' datatype='integer' name='[Calculation_1233704853097250821]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Mixed Fuel / All Electric] = &quot;All Electric&quot; THEN [Calculation_1233704853081579520] END' />
+            </column>
+            <column caption='Percent All Electric' datatype='real' name='[Calculation_1233704853098008582]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_1233704853097250821]) / SUM([Calculation_1233704853094031362])*100' />
+            </column>
+            <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Mixed Fuel / All Electric]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (Applicant Installed)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (IOU Installed)]' role='measure' type='quantitative' />
+            <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1233704853098008582]' derivation='User' name='[usr:Calculation_1233704853098008582:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]'>
+            <groupfilter function='level-members' level='[none:IoU:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]</rows>
+        <cols>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[usr:Calculation_1233704853098008582:qk]</cols>
+      </table>
+      <simple-id uuid='{1A7D8AC5-BB24-427A-AFAB-9C02EC974960}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#b07aa1' italic='true'>Line Extension Applications Received and Energized</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Combination (Q1_2025_Composite_Summary_Included)' name='federated.0tco2x60f33vbs1fczzwc0db7g1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tco2x60f33vbs1fczzwc0db7g1g'>
+            <column caption='Total ELE Applications' datatype='integer' name='[Calculation_1233704853081579520]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total Electric Line Extension Applications (Applicant Installed)]+[Total Electric Line Extension Applications (IOU Installed)]' />
+            </column>
+            <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Mixed Fuel / All Electric]' role='dimension' type='nominal' />
+            <column datatype='string' name='[New Construction / Upgrade]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (Applicant Installed)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Electric Line Extension Applications (IOU Installed)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Electric Line Extensions Energized]' role='measure' type='quantitative' />
+            <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mixed Fuel / All Electric]' derivation='None' name='[none:Mixed Fuel / All Electric:nk]' pivot='key' type='nominal' />
+            <column-instance column='[New Construction / Upgrade]' derivation='None' name='[none:New Construction / Upgrade:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1233704853081579520]' derivation='Sum' name='[sum:Calculation_1233704853081579520:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Electric Line Extensions Energized]' derivation='Sum' name='[sum:Total Electric Line Extensions Energized:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Calculation_1233704853081579520:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0tco2x60f33vbs1fczzwc0db7g1g].[sum:Total Electric Line Extensions Energized:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]'>
+            <groupfilter function='level-members' level='[none:Mixed Fuel / All Electric:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]</column>
+            <column>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]' value='165' />
+            <format attr='height' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:New Construction / Upgrade:nk]' value='83' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:New Construction / Upgrade:nk]' value='132' />
+            <format attr='height' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]' value='76' />
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]' value='128' />
+            <format attr='width' field='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' value='88' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk] / ([federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:New Construction / Upgrade:nk] / [federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]))</rows>
+        <cols>[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{777EF263-1D3C-4406-8169-640CE7BD2FBA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Combination (Q1_2025_Composite_Summary_Included)' name='federated.0tco2x60f33vbs1fczzwc0db7g1g' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0tco2x60f33vbs1fczzwc0db7g1g'>
+        <column caption='Io U' datatype='string' name='[IoU]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Mixed Fuel / All Electric]' role='dimension' type='nominal' />
+        <column-instance column='[IoU]' derivation='None' name='[none:IoU:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Mixed Fuel / All Electric]' derivation='None' name='[none:Mixed Fuel / All Electric:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='92875' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='6125'>
+            <zone fixed-size='727' h='92875' id='5' is-fixed='true' type-v2='layout-basic' w='72700' x='800' y='6125'>
+              <zone h='38015' id='3' name='Sheet 6' w='72700' x='800' y='33250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='27125' id='17' name='Sheet 4' w='72700' x='800' y='6125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='27735' id='20' name='Sheet 5' w='72700' x='800' y='71265'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='225' h='92875' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='22500' x='73500' y='6125'>
+              <zone h='15125' id='9' name='Sheet 6' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]' type-v2='filter' w='22500' x='73500' y='6125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='59250' id='8' name='Sheet 6' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]' type-v2='filter' w='22500' x='73500' y='21250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18500' id='21' name='Sheet 5' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' type-v2='filter' w='22500' x='73500' y='80500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='5125' id='28' type-v2='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontcolor='#e15759' fontsize='20' italic='true'>Q1 2025 California Electric Line Extension Data</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='33' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='5125' id='28' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontcolor='#e15759' fontsize='20' italic='true'>Q1 2025 California Electric Line Extension Data</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='209' h='27125' id='17' is-fixed='true' name='Sheet 4' w='72700' x='800' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15125' id='9' mode='checkdropdown' name='Sheet 6' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]' type-v2='filter' w='22500' x='73500' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='59250' id='8' mode='checkdropdown' name='Sheet 6' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]' type-v2='filter' w='22500' x='73500' y='21250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38015' id='3' is-fixed='true' name='Sheet 6' w='72700' x='800' y='33250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18500' id='21' mode='checkdropdown' name='Sheet 5' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' type-v2='filter' w='22500' x='73500' y='80500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='214' h='27735' id='20' is-fixed='true' name='Sheet 5' w='72700' x='800' y='71265'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{49028721-10EE-4CB4-9CE7-8293643B3C1B}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Combination (Q1_2025_Composite_Summary_Included)' name='federated.0tco2x60f33vbs1fczzwc0db7g1g' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0tco2x60f33vbs1fczzwc0db7g1g'>
+        <column datatype='string' name='[Customer Class]' role='dimension' type='nominal' />
+        <column-instance column='[Customer Class]' derivation='None' name='[none:Customer Class:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='68100' x='800' y='1000'>
+              <zone h='45875' id='3' name='Sheet 3' w='68100' x='800' y='53125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='52125' id='10' name='Sheet 2' w='68100' x='800' y='1000'>
+                <layout-cache minwidth='446' type-h='fixed' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='303' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='30300' x='68900' y='1000'>
+              <zone h='10500' id='12' name='Sheet 2' pane-specification-id='0' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]' type-v2='color' w='30300' x='68900' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='33812' id='11' name='Sheet 2' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' type-v2='filter' w='30300' x='68900' y='11500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19875' id='9' name='Sheet 3' pane-specification-id='0' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' type-v2='color' w='30300' x='68900' y='45312'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='33813' id='8' name='Sheet 3' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' type-v2='filter' w='30300' x='68900' y='65187'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='33812' id='11' mode='checkdropdown' name='Sheet 2' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' type-v2='filter' w='30300' x='68900' y='11500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52125' id='10' is-fixed='true' name='Sheet 2' w='68100' x='800' y='1000'>
+                  <layout-cache minwidth='446' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10500' id='12' name='Sheet 2' pane-specification-id='0' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]' type-v2='color' w='30300' x='68900' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='33813' id='8' mode='checkdropdown' name='Sheet 3' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' type-v2='filter' w='30300' x='68900' y='65187'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45875' id='3' is-fixed='true' name='Sheet 3' w='68100' x='800' y='53125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19875' id='9' name='Sheet 3' pane-specification-id='0' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' type-v2='color' w='30300' x='68900' y='45312'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C8317F97-E799-4BF0-93E6-48D6C418EB10}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{82D1CEF0-B21B-41B1-8046-E3BD49DA4E81}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0DA417A5-AC03-4206-9ABB-3C2742C22684}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='209'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D9A02C9B-52F1-4A85-AA42-1A3A30AB8FDD}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='259'>
+            <card param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Customer Class:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3D193F15-2E67-47ED-95C5-B4B96D998D81}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F0ABF3A-6299-4B4F-B040-81B4D73004DD}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:IoU:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6D96FFF2-F037-45C4-B7A0-F4526A995B3D}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='178'>
+            <card param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[:Measure Names]' show-morefewerbutton='false' type='filter' />
+            <card param='[federated.0tco2x60f33vbs1fczzwc0db7g1g].[none:Mixed Fuel / All Electric:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B8D44226-B9A6-4827-99E9-7813107E1956}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 5' />
+        <viewpoint name='Sheet 6' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C1A7302E-069A-42C5-A293-B9C0ABB3C0BD}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{51EB2CFA-9E61-4CD0-A028-961DD0E84C9F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 3'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{15FC5E07-1443-4D4E-ABF2-542670D61A02}' />
+    </window>
+  </windows>
+</workbook>
